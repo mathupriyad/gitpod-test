@@ -1,4 +1,3 @@
 FROM gitpod/workspace-full
-
-# Install custom tools, runtime, etc.
-RUN echo "hello world"
+RUN sudo apt-get update \
+    && sudo apt-get install -y java-15-amazon-corretto-jdk
