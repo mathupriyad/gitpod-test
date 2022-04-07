@@ -1,0 +1,22 @@
+tasks:
+  - before: clear && echo 'hello world'
+    init: echo 'hello world'
+    command: echo 'hello world'
+    
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000
+    onOpen: ignore
+    visibility: public
+  - port: 8080
+    onOpen: ignore
+    visibility: public
+
+vscode:
+  extensions:
+    - redhat.java
+    - k--kato.intellij-idea-keybindings
+    - vscjava.vscode-java-test
+    - vscjava.vscode-java-debug
