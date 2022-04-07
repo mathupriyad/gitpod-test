@@ -1,2 +1,2 @@
-FROM gitpod/workspace-base
-RUN sudo apt-get update
+FROM gitpod/workspace-full
+RUN sdk --version 
