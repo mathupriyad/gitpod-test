@@ -1,2 +1,3 @@
 FROM gitpod/workspace-full
-RUN node --version 
+USER gitpod
+RUN sdk --version 
